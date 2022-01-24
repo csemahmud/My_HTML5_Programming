@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <form id="form1" action="">
+                
+                First Name : <input type="text" name="firstName" value="Mahmudul">
+                <br>
+                Second Name : <input type="text" name="secondName" value="Hasan">
+                <br>
+                <input type="submit" value="Submit">
+                
+            </form>
+            
+            <p>Click  the  "Try it" button to return the value of each element in the form . </p>
+                <p id="output"></p>
+            <input type="button" value="Try it" onclick="myFunction()">
+            
+            <script>
+                
+                function myFunction(){
+                    
+                    var x = document.getElementById("form1");
+                    var text = "<ul>";
+                    for(i = 0; i<x.length; i++)
+                        {
+                            text += "<li>" + x.elements[i].value + "</li>";
+                        }
+                        text += "</ul>";
+                     document.getElementById("output").innerHTML = text; 
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

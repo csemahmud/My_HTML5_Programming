@@ -1,0 +1,62 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  button  to  display  what  day  it  is  today</p>
+            <button  onclick="showDay()">Click</button>
+            <p id="today_paragraph"></p>
+            <script>
+                
+                function showDay(){
+                    var x;
+                    var d = new Date().getDay();
+                    switch(d)
+                    {
+                        case 0:
+                            x = "Today  it's  Sunday";
+                            break;
+                        case 1:
+                            x = "Today  it's  Monday";
+                            break;
+                        case 2:
+                            x = "Today  it's  Tuesday";
+                            break;
+                        case 3:
+                            x = "Today  it's  Wednessday";
+                            break;
+                        case 4:
+                            x = "Today  it's  Thursday";
+                            break;
+                        case 5:
+                            x = "Today  it's  Friday";
+                            break;
+                        case 6:
+                            x = "Today  it's  Saturday";
+                    }
+                    
+                    switch(d)
+                    {
+                        case 5:
+                            case 6:
+                                x += "<br><br> Enjoy  !!!  Holiday   !!!";
+                                break;
+                        default:
+                            x += "<br><br> Looking  forward  to  the  Weekend   .";
+                    }
+                    
+                    document.getElementById("today_paragraph").innerHTML = x;
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <script type="text/javascript">
+                
+                function add(){
+                    document.getElementById("result").innerHTML
+                    = Number(document.getElementById("first_number").value)
+                        + Number(document.getElementById("second_number").value);
+                }
+                
+                function subtract(input1, input2, result){
+                    document.getElementById(result).innerHTML
+                    = Number(document.getElementById(input1).value)
+                        - Number(document.getElementById(input2).value);
+                }
+                
+                
+            </script>
+            <span>First Number : </span><input type="text" id="first_number">
+            <br/><br/>
+            <span>Second Number : </span><input type="text" id="second_number">
+            <br/><br/>
+            <input type="button" value="Add(+)" onclick="add()">
+            <input type="button" value="Subtract(-)" onclick="subtract('first_number','second_number','result')">
+            <br/><br/>
+            <span id="result"></span>
+            
+        </div>
+    </body>
+</html>

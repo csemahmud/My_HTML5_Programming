@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <script>
+                
+                function myFunction(){
+                    
+                    var y = document.getElementById("message");
+                    y.innerHTML = "";
+                    
+                    try
+                    {
+                        var x = document.getElementById("number_input").value;
+                        if(x == "")   throw  "empty";
+                        if(isNaN(x))   throw  "not  a  Number";
+                        if(x>10)  throw   "TOO  HIGH   !!!";
+                        if(x<5)   throw  "too   low";
+                        y.innerHTML = "input  " + x + "  is OK  !!!";
+                    }
+                    
+                    catch(err)
+                    {
+                        y.innerHTML = "Error : " + err  + ".";
+                    }
+                    
+                }
+                
+            </script>
+            <h1>My  JavaScript</h1>
+            <p>Please  input  a  number  between  5  and  10 ; </p>
+            <input id="number_input" type="text">
+            <button onclick="myFunction()">Test  Input</button>
+            <p id="message"></p>
+        </div>
+    </body>
+</html>

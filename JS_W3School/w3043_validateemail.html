@@ -1,0 +1,40 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            
+            function validateEmail(){
+                
+                var  x = document.forms["myForm"]["email"].value;
+                var atpos = x.indexOf("@");
+                var dotpos = x.lastIndexOf(".");
+                if(atpos < 1 || dotpos < atpos + 2 || dotpos+2 >= x.length)
+                    {
+                        alert("Not  a  valid  email  address");
+                        return false;
+                    }
+                
+            }
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <form  name="myForm"  action=""  onsubmit="return validateEmail()"  method="post">
+                
+                Email : <input  type="text" name="email">
+                <input type="submit" value="Submit">
+                
+            </form>
+            
+        </div>
+    </body>
+</html>

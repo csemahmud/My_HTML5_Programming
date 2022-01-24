@@ -1,0 +1,29 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+         <script>
+                
+            function changeText(){
+                var x = document.getElementById("firstNameText");
+                x.value = x.value.toUpperCase();
+            }
+                
+            </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            Enter  your  name : 
+            <input type="text" id="firstNameText" onchange="changeText()">
+            <p>When you leave the input field, a function is triggered, which transforms the
+            input text to upper case</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Log In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                padding: 10%;
+            }
+            h3 {
+                padding-left: 10px;
+                color: #99cc66;
+                background-color: #663399;
+            }
+            .button {
+                float: left;
+                height: 40px;
+                width: 70px;
+                color: #99cc66;
+                background-color: #663399;
+                font-weight: bolder;
+                border-radius: 10px;
+                padding: 10px;
+                text-decoration: none;
+            }
+            .button:hover {
+                background-color: #9966cc;
+                color: #669933;
+                transition: all 1s;
+                
+            }
+        </style>
+        <script type="text/javascript">
+            
+            function validate() {
+                if(document.log_in_form.user_id.value=="") {
+                    alert("User ID is required");
+                    return false;
+                }
+                else if(document.log_in_form.password.value=="") {
+                    alert("Password is required");
+                    return false;
+                }
+                else {
+                    document.writeln("welcome");
+                }
+            }
+            
+        </script>
+    </head>
+    
+    <!--MAHMUDUL   HASAN   KHAN   DIU 143-25-417-->
+    
+    <body>
+        <div>
+            
+            <div>
+                <form name="log_in_form" action="welcome.html" onsubmit="return validate();" method="post">
+                    <table>
+                        <tr>
+                            <td colspan="3"><h3>Log In</h3></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>User Id</strong></td>
+                            <td> : </td>
+                            <td><input type="text" name="user_id"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Password</strong></td>
+                            <td> : </td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>
+                                <input class="button" type="submit" name="log_in_btn" value="Log In">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Given  that  y = 3,  calculate = x=y+5  and  display  the  result</p>
+            <button  onclick="testFunction()">Click</button>
+            <p id="test_paragraph"></p>
+            
+            <script>
+                
+                function testFunction(){
+                    var y = 3;
+                    var x = y+5;
+                    var test_p = document.getElementById("test_paragraph");
+                    test_p.innerHTML = "x = y + 5 = " + y + " + 5 = " + x;
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

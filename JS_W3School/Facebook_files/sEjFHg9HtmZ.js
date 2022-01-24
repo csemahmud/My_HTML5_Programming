@@ -1,0 +1,5 @@
+/*!CK:4061420897!*//*1390365998,178163747*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["sqYpw"]); }
+
+__d("intlList",["fbt","invariant","keyMirror"],function(a,b,c,d,e,f){'use strict';var g=b('fbt'),h=b('invariant'),i=b('keyMirror'),j=function(l,m){m=m||j.CONJUNCTIONS.AND;var n=l.length;if(n===0){return '';}else if(n===1)return l[0];var o=l.shift(),p=l.pop(),q=o;l.forEach(function(r){q=g._("{previous items}, {following items}",[g.param("previous items",q),g.param("following items",r)]);});return k(q,p,m);};function k(l,m,n){switch(n){case j.CONJUNCTIONS.AND:return (g._("{list of items} and {last item}",[g.param("list of items",l),g.param("last item",m)]));case j.CONJUNCTIONS.OR:return (g._("{list of items} or {last item}",[g.param("list of items",l),g.param("last item",m)]));default:h(false);}}j.CONJUNCTIONS=i({AND:null,OR:null});e.exports=j;});

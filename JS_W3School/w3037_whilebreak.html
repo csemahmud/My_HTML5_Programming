@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  button  to  loop  through  a  block  as  long  as  <em> i </em>  is  less  than  5</p>
+            <button  onclick="whileFunction()">Click  for <b> while </b> loop</button>
+            <button  onclick="doWhileFunction()">Click  for <b>  do  while </b> loop</button>
+            <p id="while_paragraph"></p>
+            <p id="dowhile_paragraph"></p>
+            
+            <script>
+                
+                function whileFunction(){
+                    var x = "<h3>From  <b>while</b>  Loop : </h3>  <br>", i = 0;
+                    
+                    while(true)
+                        {
+                            x += "The  number  is  : " + i + "<br>";
+                        i++;
+                        if(i>4)
+                            break;
+                        }
+                        
+                    document.getElementById("while_paragraph").innerHTML = x;
+                }
+                
+                function doWhileFunction(){
+                    var x = "<h3>From  <b>do  while</b>  Loop : </h3>  <br>", i = 0;
+                    
+                    do
+                    {
+                        x += "The  number  is  : " + i + "<br>";
+                        i++;
+                    }
+                    while(i<5);
+                    
+                    document.getElementById("dowhile_paragraph").innerHTML = x;
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

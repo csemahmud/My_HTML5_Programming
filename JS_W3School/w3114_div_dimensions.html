@@ -1,0 +1,83 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            div{
+                height: 200px;
+                width: 600px;
+                padding: 20px;
+                margin: 6px;
+                border-width: 2px;
+                background-color: darkblue;
+                color: lightyellow;
+                border-color: goldenrod;
+                border-style: solid;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#display_btn").click(function(){
+                    text = "<ul type='square'><li>Width   of   div : " + $("div").width()
+                            + ";   Height   of   div : " + $("div").height()
+                            + "</li><li> Inner   Width : " + $("div").innerWidth()
+                            + ";   Inner   Height : " + $("div").innerHeight()
+                            + "</li><li> Outer   Width : " + $("div").outerWidth()
+                            + ";   Outer   Height : " + $("div").outerHeight()
+                            + "</li><li> Outer   Width   (  maergin   included   ) : " 
+                            + $("div").outerWidth(true)
+                            + ";   Outer   Height   (  maergin   included   ) : " 
+                            + $("div").outerHeight(true) + "</li></ul>"
+                    $("div").html(text);
+                });
+                $("#resize_btn").click(function(){
+                    $("div").width(800).height(400);
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div></div>
+        <br/>
+        <button id="display_btn">Display   dimensions   of   div</button> |
+        <button id="resize_btn">Resize   div</button>
+        <p>width()   returns   the   width   of   an   element</p>
+        <p>height()   returns   the   height   of   an   element</p>
+        <p>
+            innerWidth()   returns   the   width   of   an   element   
+            (   includes   padding   )
+        </p>
+        <p>
+            innerHeight()   returns   the   height   of   an   element   
+            (   includes   padding   )
+        </p>
+        <p>
+            outerWidth()   returns   the   width   of   an   element   
+            (   includes   padding   and   border   )
+        </p>
+        <p>
+            outerHeight()   returns   the   height   of   an   element   
+            (   includes   padding   and   border   )
+        </p>
+        <p>
+            outerWidth(true)   returns   the   width   of   an   element   
+            (   includes   padding,   border   and   margin   )
+        </p>
+        <p>
+            outerHeight(true)   returns   the   height   of   an   element   
+            (   includes   padding,   border   and   margin   )
+        </p>
+    </body>
+</html>

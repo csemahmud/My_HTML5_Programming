@@ -1,0 +1,83 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            .descendants *{
+                display: block;
+                border: 2px dotted gray;
+                color: gray;
+                padding: 5px;
+                margin: 15px;
+            }
+            
+            #f_child_btn b{
+                color: red;
+            }
+            
+            #all_child_btn b{
+                color: blue;
+            }
+            
+            #span_child_btn b{
+                color: green;
+            }
+            
+            #all_descendants_btn b{
+                color: darkgoldenrod;
+            }
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#f_child_btn").click(function(){
+                    $("div").children("p.first_child").css({"color":"red",
+                                            "border":"3px solid red",
+                                            "font-weight":"bolder"});
+                });
+                $("#all_child_btn").click(function(){
+                    $("div").children().css({"color":"blue",
+                                            "border":"3px solid blue",
+                                            "font-weight":"bolder"});
+                });
+                $("#span_child_btn").click(function(){
+                    $("div").find("span").css({"color":"green",
+                                            "border":"3px solid green",
+                                            "font-weight":"bolder"});
+                });
+                $("#all_descendants_btn").click(function(){
+                    $("div").find("*").css({"color":"darkgoldenrod",
+                                            "border":"3px solid darkgoldenrod",
+                                            "font-weight":"bolder"});
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div class="descendants">   div   (   Current   Element   )
+            
+            <p class="first_child">   p   (   child   )    
+                <span>   span   (   grand - child   )   </span>
+            </p>
+            <p>   p   (   child   )    
+                <span>   span   (   grand - child   )   </span>
+            </p>
+            
+        </div>
+        <button id="f_child_btn">Mark   first   Child   of   &lt;div&gt;   <b>red</b></button>   |   
+        <button id="all_child_btn">Mark   all   Children   of   &lt;div&gt;   <b>blue</b></button>   |   
+        <button id="span_child_btn">
+            Mark   all   &lt;span&gt;   as   Descendant   of   &lt;div&gt;   <b>green</b></button>   |   
+        <button id="all_descendants_btn">Mark   all   Descendants   of   &lt;div&gt;   <b>dark-goldenrod</b></button>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            
+            b{
+                color: lightyellow;
+                background-color: darkblue;
+                font-family: cursive;
+                font-weight: bolder;
+                font-size: xx-large;
+                padding: 4px;
+            }
+            
+        </style>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <script>
+                
+                function person(firstName, lastName, age, eyeColor){
+                    
+                    this.firstName = firstName;
+                    this.lastName = lastName;
+                    this.age = age;
+                    this.eyeColor = eyeColor;
+                    
+                    this.changeName = changeName;
+                    function changeName(name){
+                        this.lastName = name;
+                    }
+                    this.showAll = showAll;
+                    function showAll(){
+                        
+                        var text = "";
+                        for(var x in this){
+                            text +=x + " : " + this[x] + ",<br>";
+                        }
+                        return text;
+                    }
+                    
+                }
+                    
+                aLady = new person("Layla", "Nishi", 22, "Blue")
+                document.write("Before  marriage : <br><br>" + aLady.showAll());
+                aLady.changeName("<big><b><i><u>Khan</u></i></b></big>");
+                document.write("<br><br> After  marriage : <br><br>" + aLady.showAll());
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

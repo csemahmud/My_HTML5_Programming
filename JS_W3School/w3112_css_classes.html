@@ -1,0 +1,86 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            .important{
+                color: darkred;
+                background-color: lightcyan;
+                font-size: xx-large;
+                font-weight: bolder;
+                font-style: oblique;
+                font-family: cursive;
+                font-stretch: ultra-expanded;
+            }
+            
+            .background{
+                color: lightyellow;
+                background-color: darkblue;
+                border-color: goldenrod;
+                border-style: groove;
+                border-width: thick;
+                border-radius: 10px;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#remove_btn").hide();
+                $("#add_btn").click(function(){
+                    $("h1,h2,p").addClass("important");
+                    $("div").addClass("background");
+                    $("#p1").addClass("background important");
+                    $("#p2").addClass("important background");
+                    $("#remove_btn").show();
+                    $("#add_btn").hide();
+                    
+                });
+                $("#remove_btn").click(function(){
+                    $("h1,h2,p").removeClass("important");
+                    $("div").removeClass("background");
+                    $("#p1").removeClass("background important");
+                    $("#p2").removeClass("important background");
+                    $("#remove_btn").hide();
+                    $("#add_btn").show();
+                });
+                $("#toggle_btn").click(function(){
+                    $("h1,h2,p").toggleClass("important");
+                    $("div").toggleClass("background");
+                    $("#p1").toggleClass("background important");
+                    $("#p2").toggleClass("important background");
+                    $("#remove_btn").toggle();
+                    $("#add_btn").toggle();
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <button id="remove_btn">Remove   CSS   classes   from   elements</button> |
+        <button id="toggle_btn">Toggle   CSS   classes   to   elements</button> |
+        <br/>
+        <br/>
+        <div>
+            
+            <h1>Heading   1</h1>
+            <h2>Heading   2</h2>
+            This   is   some   text   in   div
+            <p id="p1">This   is   a   paragraph</p>
+            <p id="p2">This   is   another   paragraph</p>
+            <p>This   is   third   paragraph</p>
+        </div>
+        <br/>
+        <br/>
+        <button id="add_btn">Add   CSS   classes   to   elements</button>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            p{
+                color: black;
+                background-color: white;
+            }
+            
+        </style>
+        <script>
+            
+            mhkJQ = $.noConflict();
+            
+                /*   In   order   to   avoid   Confilct   with   other
+                      JavaScript   framework   jQuery    or   any
+                      Variable   can   be   used   in   the   place
+                      of   "$"   sign
+                */
+            jQuery(document).ready(function($){
+                mhkJQ("button").click(function(){
+                    $("p").css({"color":"black",
+                                "background-color":"white"});
+                });
+                jQuery("#first_btn").click(function($){
+                    mhkJQ("div p").first().css({"color":"lightyellow",
+                                "background-color":"darkblue"});
+                });
+                $("#last_btn").click(function(){
+                    jQuery("div p").last().css({"color":"lightyellow",
+                                "background-color":"darkblue"});
+                });
+                mhkJQ("#eq_btn").click(function(){
+                    $("p").eq("2").css({"color":"lightyellow",
+                                "background-color":"darkblue"});
+                });
+                jQuery("#filter_btn").click(function($){
+                    mhkJQ("p").filter(".test").css({"color":"lightyellow",
+                                "background-color":"darkblue"});
+                });
+                $("#not_btn").click(function($){
+                    jQuery("p").not(".test").css({"color":"lightyellow",
+                                "background-color":"darkblue"});
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <p>1 : First   paragraph&lt;p&gt;   <b>Without</b>   &lt;div&gt;</p>
+        <div class="test">
+            <p>1 : First   paragraph&lt;p&gt;   <b>Inside</b>   &lt;div&gt;</p>
+        </div>
+        <div>
+            <p>2 : Another   paragraph&lt;p&gt;   <b>Inside</b>   &lt;div&gt;</p>
+        </div>
+        <div>
+            <p>3 : Last   paragraph&lt;p&gt;   <b>Inside</b>   &lt;div&gt;</p>
+        </div>
+        <p class="test">2 : Last   Paragraph&lt;p&gt;   <b>Without</b>   &lt;div&gt;</p>
+        <button id="first_btn">Select   First   Paragraph   inside   &lt;div&gt;</button>   |   
+        <button id="last_btn">Select   Last   Paragraph   inside   &lt;div&gt;</button>   |   
+        <button id="eq_btn">Select   the   Third   Paragraph   in   whole   document</button>   |   
+        <button id="filter_btn">Select   Paragraphs   with   class := test</button>   |   
+        <button id="not_btn">Select   All   Paragraphs   except   class := test</button>
+    </body>
+</html>

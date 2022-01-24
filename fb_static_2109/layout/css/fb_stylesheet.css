@@ -1,0 +1,372 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 22, 2021, 12:35:02 AM
+    Author     : Mahmudul Hasan Khan CSE
+*/
+
+
+root {
+    display: block;
+}
+
+@font-face{
+    font-family: mhkDup;
+    src: url('../fonts/Duplexide.ttf');
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#main_background {
+    float: left;
+    width: 100%;
+    background-color: #000000;
+}
+
+#main_background #wrapper {
+    float: left;
+    margin: 5px 2%;
+    background-color: #666666;
+    width: 95%;
+    min-width: 980px;
+}
+
+#main_background #wrapper #main{
+    float: left;
+    background-color: #cccccc;
+    width: 79.2%;
+    margin-right: .5%;
+}
+
+#main_background #wrapper #main #header_main{
+    position: fixed;
+    top: 5px;
+    left: 2.5%;
+    float: left;
+    height: auto;
+    width: 75%;
+    min-width: 780px;
+    z-index: 100;
+}
+
+#main_background #wrapper #main #header_main #logo{
+    float: left;
+    background-color: #000066;
+    border-color: #ffcc00;
+    border-style: groove;
+    border-width: 1px;
+    color: #ffff99;
+    height: 32px;
+    width: 16.5%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    font-style: italic;
+    margin-bottom: .5%;
+}
+
+#main_background #wrapper #main #header_main #top_menu {
+    float: left;
+    background-color: #3333ff;
+    width: 82%;
+    padding-left: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-bottom: .5%;
+    height: 32px;
+}
+
+#main_background #wrapper #main #header_main #top_menu #search_textbox{
+    float: left;
+    width: 35%;
+    height: 23px;
+    border-radius: 10px;
+    border-color: #666666;
+    border-style: inset;
+    border-width: 1px;
+    box-shadow: -1px 1px 1px #000000 inset;
+    padding-left: .8%;
+    font-weight: bold;
+}
+
+#main_background #wrapper #main #header_main #top_menu #submit_button {
+    background: url('../images/fb_search_logo.png') center;
+    float: left;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: -3px 3px 3px #000000;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #666666;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transform: all 1s;
+}
+
+#main_background #wrapper #main #header_main #top_menu #submit_button:hover{
+    box-shadow: -10px 10px 15px #000000;
+    position: relative;
+    z-index: 10;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+
+#main_background #wrapper #main #header_main #top_menu img{
+    float: left;
+    margin-left: .5%;
+    cursor: pointer;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav {
+    float: left;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 43.5%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul{
+    float: left;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul li {
+    float: left;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    list-style: none;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul #list_item1 {
+    width: 15.5%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul #list_item2 {
+    width: 33.3%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul #list_item3 {
+    width: 27.7%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul #list_item4 {
+    width: 22.2%;
+}
+
+#main_background #wrapper #main #header_main #top_menu #top_nav ul li a{
+    float: left;
+    color: #cccc00;
+    text-align: center;
+    padding-left: 1%;
+    font-size: 14px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+#main_background #wrapper #main #space {
+    float: left;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+}
+
+#main_background #wrapper #main #space2 {
+    float: left;
+    width: 100%;
+    height: 65px;
+    background-color: transparent;
+}
+
+#main_background #wrapper #main #content {
+    float: left;
+    width: 100%;
+    background-color: #9966ff;
+}
+
+.img_box {
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.img_post {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 0px #000000;
+    border-style: groove inset;
+    border-color: silver gold darkgoldenrod;
+    border-width: 0px;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.img_post:hover {
+    box-shadow: -10px 10px 15px #000000;
+    border-width: 5px 8px 11px;
+    position: relative;
+    z-index: 10;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+}
+
+#main_background #wrapper #main #content #home_left {
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+    background-color: #9999ff;
+} 
+
+#main_background #wrapper #main #content #home_left .list_home {
+    background-color: #ffffff;
+    margin: 1%;
+    padding: 5%;
+    width: 87%;
+    border-bottom-width: 1px;
+    border-bottom-color: #999999;
+    border-bottom-style: groove;
+}
+
+#main_background #wrapper #main #content #home_left .list_home ul li {
+    list-style-type: none;
+    border-bottom-style: none;
+}
+
+#main_background #wrapper #main #content #home_middle {
+    float: left;
+    width: 54%;
+    margin-right: 1%;
+    background-color: #9999ff;
+}
+
+#main_background #wrapper #main #content #home_middle #home_status {
+    float: left;
+    width: 80%;
+    margin: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+}
+
+#main_background #wrapper #main #content #home_middle #home_status textarea {
+    float: left;
+    width: 90%;
+    border-radius: 10px;
+    border-color: #666666;
+    border-style: inset;
+    border-width: 1px;
+    box-shadow: -1px 1px 1px #000000 inset;
+    padding-left: .8%;
+    font-weight: bold;
+}
+
+#main_background #wrapper #main #content #home_middle #home_box {
+    float: left;
+    width: 80%;
+    margin: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+}
+
+#main_background #wrapper #main #content #home_middle #home_box ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_background #wrapper #main #content #home_middle #home_box ul li {
+    list-style-type: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #999999;
+    border-bottom-style: groove;
+    margin-bottom: 15%;
+}
+
+#main_background #wrapper #main #content #home_middle #home_box a {
+    margin-left: 2%;
+}
+
+#main_background #wrapper #main #content #home_right{
+    float: left;
+    width: 19%;
+    margin-right: 1%;
+    background-color: #9999ff;
+}
+
+#main_background #wrapper #main #content #home_right .recommended_pages{
+    float: left;
+    width: 80%;
+    margin: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+}
+
+#main_background #wrapper #main #content #home_right .recommended_pages ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_background #wrapper #main #content #home_right .recommended_pages ul li{
+    list-style-type: none;
+    height: 88px;
+    border-bottom-width: 1px;
+    border-bottom-color: #999999;
+    border-bottom-style: groove;
+}
+
+#main_background #wrapper #main #content #home_right .recommended_pages a{
+    margin-left: 2%;
+}
+
+.input_button {
+    float: left;
+    background-color: #000066;
+    box-shadow: -1px 1px 1px #000000;
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 5px 9px;
+    text-align: center;
+    padding: 0px 7px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0;
+    border-style: groove;
+    border-width: 0px 0px 1px 1px;
+    border-color: #ffffff;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.input_button:hover{
+    background-color: #336699;
+}

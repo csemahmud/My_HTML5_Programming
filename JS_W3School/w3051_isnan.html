@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p id="test_paragraph"></p>
+            <p>A number divided by a string is not a number</p>
+            <p>A number divided by a numeric string is a number</p>
+            <p>A number divided by zero is a number</p>
+            
+            <script>
+                
+                var x = 1000/"ten";
+                var y = 1000/"500";
+                var z1 = 1000/0;
+                var z2 = -1000/"0";
+                var txt = "<p>" + 1000 + '/"ten" = ' + x + " is not a Number : <big><b><i><u>" 
+                        + isNaN(x) + "</u></i></b></big></p>";
+                txt += "<p>" + 1000 + '/"500" = ' + y + " is not a Number : <big><b><i><u>" 
+                        + isNaN(y) + "</u></i></b></big></p>";
+                txt += "<p>" + 1000 + '/0 = ' + z1 + " is not a Number : <big><b><i><u>" 
+                        + isNaN(z1) + "</u></i></b></big></p>";
+                txt += "<p>" + -1000 + '/"0" = ' + z2 + " is not a Number : <big><b><i><u>" 
+                        + isNaN(z2) + "</u></i></b></big></p>";
+                document.getElementById("test_paragraph").innerHTML = txt;
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

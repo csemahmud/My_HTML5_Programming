@@ -1,0 +1,55 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                
+                i = 0;
+                j = 0;
+                
+                $("#append").click(function(){
+                    $("p").append("<b> Appended   Text </b>");
+                    $("ol").append("<li>Appended   List   Item : " + ++i +"</li>");
+                    textHTML = "<p>Appneded   First   Paragraph</p>";  //   Create   text   with   HTML
+                    textJQuery = $("<p></p>").text("Appneded   Second   Paragraph");
+                    //   Create   text   with   JQuery
+                    textDOM = document.createElement("p");
+                    textDOM.innerHTML = "Appneded   Third   Paragraph";
+                    //   Create   text   with   DOM
+                    $("body").append(textHTML,textJQuery,textDOM);
+                });
+                
+                $("#prepend").click(function(){
+                    $("p").prepend("<b> Prepended   Text </b>");
+                    $("ol").prepend("<li>Prepended   List   Item : " + ++j +"</li>");
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p>This   is   a   paragraph .</p>
+            <p>This   is   another   paragraph .</p>
+            <ol>
+                <li>List   Item   1</li>
+                <li>List   Item   2</li>
+                <li>List   Item   3</li>
+            </ol>
+            
+            <input type="button" id="append" value="Append">
+            <input type="button" id="prepend" value="Prepend">
+        </div>
+    </body>
+</html>

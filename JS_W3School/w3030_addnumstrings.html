@@ -1,0 +1,36 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  buttons  to  add  numbers  and  strings</p>
+            <button onclick="clickFunction()">Click</button>
+            <p id="test_paragraph"></p>
+            
+            <script>
+                
+                function addFunction(a,b){
+                    return a+b;
+                }
+                
+                function clickFunction(){
+                    var x = addFunction(5,5);
+                    var y = addFunction("5",5);
+                    var z = addFunction("Hello",5);
+                    
+                    var testP = document.getElementById("test_paragraph");
+                    testP.innerHTML = x + "<br>" + y + "<br>" + z;
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

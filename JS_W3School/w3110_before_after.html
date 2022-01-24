@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#before").click(function(){
+                    $("img").before("<b> Hello </b>")
+                });
+            })
+            
+            function afterText(){
+                textHTML = "<i> I </i>";  //   Create   text   with   HTML
+                textJQuery = $("<b></b>").text(" Love ");
+                //   Create   text   with   JQuery
+                textDOM = document.createElement("big");
+                textDOM.innerHTML = " KAT ";
+                //   Create   text   with   DOM
+                $("img").after(textHTML,textJQuery,textDOM);
+                //   Insert   elements   after   img
+            }
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <img src="Images/w3066_Katrina.jpg" height="140">
+            <br/><br/>
+            <input type="button" id="before" value="Insert   Before">
+            <button  onclick="afterText()"><u><big><i><b>Insert   After</b></i></big></u></button>
+            
+        </div>
+    </body>
+</html>

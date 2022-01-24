@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#text_btn").click(function(){
+                    alert("Text : " + $("#test").text());
+                });
+                $("#html_btn").click(function(){
+                    alert("HTML : " + $("#test").html());
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="test">This  is  some  <b>Bold</b>  text  in  a  paragraph  .</p>
+            
+            <input  id="text_btn"  type="button"  value="Show  Text">
+            <input  id="html_btn"  type="button"  value="Show  Html">
+        </div>
+    </body>
+</html>

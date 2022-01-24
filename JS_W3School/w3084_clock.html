@@ -1,0 +1,36 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p>A  script  on  this  page  starts  this  clock : </p>
+            <p id="clock"></p>
+            <input type="button" onclick="myStopFunction()" value="Stop  time">
+            <script>
+                
+                var timeVar = setInterval(function(){ myTimer(); }, 1000);
+                                          
+                function myTimer(){
+                    var d = new Date();
+                    var t = d.toLocaleTimeString();
+                    document.getElementById("clock").innerHTML = t;
+                }
+                                          
+                function myStopFunction(){
+                    clearInterval(timeVar);
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

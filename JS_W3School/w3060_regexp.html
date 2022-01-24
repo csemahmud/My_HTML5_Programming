@@ -1,0 +1,66 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="main_paragraph">Click the button to do a :- </p>
+            <p id="test1_paragraph">single and case-sensitive search for "pen"</p>
+            <p id="test2_paragraph">single and case-insensitive search for "pen"</p>
+            <p id="test3_paragraph">global and case-sensitive search for "pen"</p>
+            <p id="test4_paragraph">global and case-insensitive search for "pen"</p>
+            <p id="test5_paragraph"></p>
+            <p id="test6_paragraph"></p>
+            <p id="test7_paragraph"></p>
+            <p id="test8_paragraph"></p>
+            
+            <input type="button" value="Click" onclick="myFunction()">
+            
+            <script>
+                
+                function myFunction(){
+                    str = "PEN, pen, ballpen, peninsula";
+                    var patt1 = /pen/;
+                    var result1 = str.match(patt1);
+                    
+                    var patt2 = /pen/i;
+                    var result2 = str.match(patt2);
+                    
+                    var patt3 = /pen/g;
+                    var result3 = str.match(patt3);
+                    
+                    var patt4 = /pen/gi;
+                    var result4 = str.match(patt4);
+                    
+                    document.getElementById("main_paragraph").innerHTML = str;
+                    document.getElementById("test1_paragraph").innerHTML = result1;
+                    document.getElementById("test2_paragraph").innerHTML = result2;
+                    document.getElementById("test3_paragraph").innerHTML = result3;
+                    document.getElementById("test4_paragraph").innerHTML = result4;
+                    
+                    var patt5 = new RegExp("a");
+                    document.getElementById("test5_paragraph").innerHTML 
+                            = patt5.test(str);
+                    document.getElementById("test6_paragraph").innerHTML 
+                            = patt5.exec(str);
+                    
+                    var patt6 = new RegExp("A");
+                    document.getElementById("test7_paragraph").innerHTML 
+                            = patt6.test(str);
+                    document.getElementById("test8_paragraph").innerHTML 
+                            = patt6.exec(str);
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

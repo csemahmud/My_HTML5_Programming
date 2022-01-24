@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="output"></p>
+            
+            <script>
+                
+                function get_window_size(){
+                    
+                    var w = window.innerWidth 
+                            || document.documentElement.clientWidth
+                            || document.body.clientWidth;
+                    
+                    var h = window.innerHeight 
+                            || document.documentElement.clientHeight
+                            || document.body.clientHeight;
+                    
+                    var percentage = (w*h*100)/(screen.availHeight*screen.availWidth);
+                    
+                    document.getElementById("output").innerHTML
+                        = "Browser  inner  window  width : " + w + "  and  height : " + h + " ."
+                            + "<p>Screen  available width : " + screen.availWidth
+                            + "  and  Screen  available  height : " + screen.availHeight
+                            + "</p><p> Current window is " + percentage + "% of total Screen </p>";
+                }
+                
+            </script>
+            
+            <input type="button" onclick="get_window_size()" value="Click  to  view  window  property">
+            
+        </div>
+    </body>
+</html>

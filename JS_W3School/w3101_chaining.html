@@ -1,0 +1,33 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#click1").click(function(){
+                    $("#p1").css("color","red")
+                    .slideUp(2000)
+                    .slideDown(2000);
+                })
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="p1">JQuery   is   FUN   !!!</p>
+            <input  id="click1"  type="button"  value="Click   Me">
+            
+        </div>
+    </body>
+</html>

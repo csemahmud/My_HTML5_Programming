@@ -1,0 +1,123 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <h1><i><u>SUM   OF   SUBSETS</u></i></h1>
+            <h3>Algorithm  :  Backtracking</h3>
+            
+            Enter  all  the  elements  of  a  set  [Separated  by  comma  (,)] :
+            <br>
+            <input type="text" id="elementsText">
+            <br>
+            Enter  your  expected  Sum :
+            <br>
+            <input type="text" id="sumText">
+            <br>
+            
+            <input type="button" value="View  All  Possible  Subsets" onclick="mhkFunction()">
+            
+            <p id="outputP"></p>
+            
+            <script>
+                
+                //   MAHMUDUL   HASAN   KHAN
+                //   http://www.w3schools.com/
+                //   Algorithm : BACKTRACKING
+                //   Problem : SUM   OF   SUBSETS
+                
+                function SumOfSubset(elements, givenSum){
+                    this.elements = elements;
+                    this.givenSum = givenSum;
+                    setStr = elements.split(",");
+                    set = new Array();
+                    this.sum = 0;
+                    for(x in setStr)
+                        {
+                            set[x] = parseFloat(setStr[x]);
+                            this.sum += set[x];
+                        }
+                    flag = new Array();
+                    this.Calculate_SumOfSubset = Calculate_SumOfSubset;
+                    
+                    //   Algorithm
+                    
+                    function Calculate_SumOfSubset(remainingSum, currentSum, index)
+                        
+                        //   Find all subsets of set[] that sum to givenSum .
+                        //   values of flag[j], 0 <= j < index, have already been determined .
+                        //   currentSum = SUM[j >=> 0 to index-1](set[j]*flag[j]) and
+                        //   remainingSum = SUM[j >=> index to set.length-1](set[j])
+                        //   The set[j]'s are in nondecreasing order .
+                        //   It is assumed that set[0] <= givenSum and
+                        //   SUM[i >=> 0 to set.length-1](set[i]) >= givenSum
+                        
+                    {
+                        
+                        //   Generate left child
+                        //   Note : currentSum + set[index] <= givenSum since Bk-1 is true
+                        
+                        flag[index] = true;
+                        if((currentSum+set[index])==givenSum)
+                        
+                        //   Subset found
+                        
+                            {
+                                output = "<li>{";
+                                for(i = 0; i <= index; i++)
+                                    if(flag[i])
+                                        output += " " + set[i] + ", ";
+                                    output += "};</li>";
+                                    document.getElementById("outputP").innerHTML += output;
+                            }
+                            
+                            //   There is no recursive call here as set[j] >= 0, 0 <= j <= set.length-1
+                            
+                            else if(index < set.length - 1)
+                                {
+                                    if(currentSum + set[index] + set[index+1] <= givenSum)
+                                        Calculate_SumOfSubset(remainingSum - set[index], 
+                                                                currentSum + set[index], index + 1);
+                                                                
+                                     //   Generate right child and evaluate Bk
+                                     
+                                     if((currentSum + remainingSum - set[index] >= givenSum)
+                                             &&(currentSum + set[index+1] <= givenSum))
+                                         {
+                                             flag[index] = false;
+                                             Calculate_SumOfSubset(remainingSum - set[index], 
+                                                                currentSum, index + 1);
+                                         }
+                                }
+                    }
+                }
+                
+                function mhkFunction(){
+                    try{
+                        aSumOfSubsetobj = new SumOfSubset(
+                                document.getElementById("elementsText").value,
+                                parseFloat(document.getElementById("sumText").value));
+                        document.getElementById("outputP").innerHTML = "<ol>";
+                        aSumOfSubsetobj.Calculate_SumOfSubset(aSumOfSubsetobj.sum,0,0);
+                        document.getElementById("outputP").innerHTML += "</ol>";
+                    }
+                    catch(err){
+                        txt = "There  was  an  error  on  this  page  \n\n";
+                        txt += "Error  Description  :  "  +  err.message + "\n\n";
+                        txt += "Click  OK  to  continue : ";
+                        alert(txt);
+                    }
+                }
+            </script>
+            
+        </div>
+    </body>
+</html>

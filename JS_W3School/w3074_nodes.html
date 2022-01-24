@@ -1,0 +1,57 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div id="div1">
+            
+            <p id="p1">This  is <b> First </b> paragraph</p>
+            <p id="p2">This  is <b> Second </b> paragraph</p>
+            <p id="p3">This  is <b> Third </b> paragraph</p>
+            
+        </div>
+        
+        <script>
+            
+            function change_topic(){
+                
+                var para1 = document.createElement("h3");
+                var node1 = document.createTextNode("This is new");
+                para1.appendChild(node1);
+                
+                var element1 = document.getElementById("div1");
+                element1.appendChild(para1);
+                
+                var para2 = document.createElement("h1");
+                var node2 = document.createTextNode("NEW HEADING");
+                para2.appendChild(node2);
+                
+                var element2 = document.getElementById("div1");
+                var child2 = document.getElementById("p1");
+                element2.insertBefore(para2,child2);
+                
+                var parent3 = document.getElementById("div1");
+                var child3 = document.getElementById("p1");
+                parent3.removeChild(child3);
+                
+                var parent4 = document.getElementById("div1");
+                var child4 = document.getElementById("p3");
+                var para4 = document.createElement("p");
+                var node4 = document.createTextNode("This  paragraph  has  been  <b> Updated </b>");
+                para4.appendChild(node4);
+                parent4.replaceChild(para4,child4);
+            }
+            
+        </script>
+        
+        <input type="button" onclick="change_topic()" value="Click to change topic">
+        
+    </body>
+</html>

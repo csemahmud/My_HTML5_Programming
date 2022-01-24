@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 11, 2014, 8:10:30 PM
+    Author     : User
+*/
+
+html body {
+    width: 100%;
+    background-color: #ff0000;
+}
+
+html body #face {
+    float: left;
+    background-color: #66ccff;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    margin: 50px 25%;
+    height: 500px;
+    width: 500px;
+    border-radius: 54px;
+    position: absolute;
+    z-index: 1;
+}
+
+html body #face #base_white{
+    float: left;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 30%;
+    margin-left: 9%;
+    height: 60%;
+    width: 80%;
+    border-radius: 137px;
+    position: absolute;
+    z-index: 1;
+}
+
+html body #face .eye{
+    float: left;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    height: 30%;
+    width: 30%;
+    border-radius: 27px;
+    margin-top: 17%;
+    position: relative;
+    z-index: 2;
+}
+
+html body #face #left_eye {
+    margin-right: 0%;
+    margin-left: 18%;
+}
+
+html body #face #right_eye {
+    margin-left: 0%;
+}
+
+html body #face .eye .black_eye {
+    background-color: #000000;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    height: 15%;
+    width: 15%;
+    border-radius: 16px;
+    margin-top: 65%;
+}
+
+html body #face #left_eye #left_black_eye {
+    float: left;
+    margin-left: 68%;
+}
+
+html body #face #right_eye #right_black_eye {
+    float: right;
+    margin-right: 68%;
+}
+
+html body #face #nose{
+    float: left;
+    background-color: #cc3300;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 44%;
+    margin-left: 43%;
+    height: 10%;
+    width: 10%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+}
+
+html body #face .line{
+    background-color: #000000;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    height: 1%;
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+}
+
+html body #face .top_line {
+    margin-top: 55%;
+}
+
+html body #face .below_line {
+    margin-top: 60%;
+}
+
+html body #face .below2_line {
+    margin-top: 65%;
+}
+
+html body #face .left_line {
+    float: left;
+    margin-left: 12%;
+}
+
+html body #face .right_line {
+    float: left;
+    margin-left: 62%;
+}
+
+html body #face #middle_line{
+    float: left;
+    background-color: #000000;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 0%;
+    margin-left: 48%;
+    height: 32%;
+    width: 1%;
+    position: relative;
+    z-index: 2;
+}
+
+html body #face #mouth{
+    float: left;
+    background-color: transparent;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    margin-top: 50%;
+    margin-left: 20%;
+    height: 30%;
+    width: 60%;
+    border-radius: 114px;
+    position: absolute;
+    z-index: 3;
+}

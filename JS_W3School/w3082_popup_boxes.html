@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p>Click  the  button  to  enter  User-Name  in  the  prompt  box</p>
+            <input type="button" onclick="enterUsername()" value="Enter user - name">
+            <p id="thanks"></p>
+            
+            <script>
+                
+                function confirmUsername(username){
+                    
+                    var conf = confirm("Are you sure that,\nYour user-name is :   \n" 
+                            + username + " ?");
+                    if(conf)
+                        {
+                            alert("Hello,   " + username + "   !!!\nHow are you ?");
+                            document.getElementById("thanks").innerHTML 
+                                = "Thank you, " + username + " !!!";
+                        }
+                    else
+                        enterUsername();
+                }
+                
+                function enterUsername(){
+                    var username = prompt("Please enter your user-name : ","cse.mahmud");
+                    
+                    if(username)
+                        confirmUsername(username);
+                    else
+                        alert("Can not get user-name : ");
+                    
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

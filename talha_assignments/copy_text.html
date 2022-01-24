@@ -1,0 +1,30 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <script type="text/javascript">
+                
+                function copy_text(){
+                    document.getElementById("result").innerHTML 
+                            = document.getElementById("given_text").value;
+                }
+                
+            </script>
+            
+            <span>Given Text : </span><input type="text" id="given_text" onkeyup="copy_text()">
+            <br/><br/>
+            <span>Copy Text : </span><span id="result"></span>
+            
+        </div>
+    </body>
+</html>

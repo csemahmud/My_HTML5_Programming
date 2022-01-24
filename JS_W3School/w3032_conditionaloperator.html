@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  button  to  check  the  age</p>
+            Age : <input  id="age"  value="18">
+            <p>Old  Enough  to  vote  ?</p>
+            <button onclick="conditionalFnc()">Check</button>
+            <p id="result"></p>
+            
+            <script>
+                
+                function conditionalFnc(){
+                    var age, voteable;
+                    age = document.getElementById("age").value;
+                    voteable = (age<18) ? "Too Young !!! " : " Old Enough ";
+                    document.getElementById("result").innerHTML = voteable;
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

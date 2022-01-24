@@ -1,0 +1,50 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color","yellow");
+                    $(this).css("color","blue");
+                    $(this).css("font-weight","bolder");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color","blue");
+                    $(this).css("color","yellow");
+                });
+                
+                $("input").mouseenter(function(){
+                    $(this).css("background-color","red");
+                    $(this).css("color","cyan");
+                });
+                
+                $("input").mouseleave(function(){
+                    $(this).css("background-color","black");
+                    $(this).css("color","white");
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <form action="" method="post">
+                Name : <input type="text" name="fullname">
+                <br>
+                Email : <input type="email" name="email">
+                <br>
+                <input type="submit" value="submit" name="submit_button">
+            </form>
+        </div>
+    </body>
+</html>

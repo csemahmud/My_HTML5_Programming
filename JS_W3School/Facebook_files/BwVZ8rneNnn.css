@@ -1,0 +1,152 @@
+/*!CK:2879200232!*//*1390274913,178127433*/
+
+body.permalinkBody{background-color:#e7ebf2}
+body.permalinkBody #globalContainer{margin-top:40px;min-width:889px;width:889px}
+.permalinkBody #mainContainer{margin-bottom:50px;width:100%}
+.permalinkBody #contentCol{background-color:transparent}
+.permalinkBody .hasRightCol #rightCol{width:243px}
+.permalinkBody .hasRightCol #contentArea{border:1px solid #c4cde0;-webkit-border-radius:4px;width:624px;background-color:#fff;padding:0 3px 1px}
+.permalinkBody .permalink_stream .uiStream .uiStreamMessage, .permalinkBody .permalink_stream .uiStream .uiStreamAttachments{padding-left:15px;padding-right:20px}
+.permalinkBody .permalink_stream .uiStream .uiStreamMessage{font-size:13px;line-height:18px}
+.permalinkBody .permalink_stream .uiStream .mainWrapper .uiAttachmentNoMedia{padding-left:10px;margin-left:18px;border-left:2px solid #c0c9dd}
+.permalinkBody .permalink_stream .fbStreamPermalinkHeader{border-bottom:1px solid #e9e9e9;margin:15px;padding-bottom:10px}
+.permalinkBody .permalink_stream .uiStream .uiStreamStory .mainWrapper{margin-bottom:4px;margin-right:0;padding-top:0}
+.permalinkBody .uiCommentContainer{margin-bottom:-2px}
+.permalinkBody .uiStreamRedesign .uiCommentContainer{margin-bottom:-4px}
+.permalinkBody .fbTimelineUFI{margin-top:7px}
+.permalinkBody .permalink_stream .subscribeOrLikeSentence, .permalinkBody .permalink_stream .uiStreamPassive, .permalinkBody .permalink_stream .uiStreamHeadline{color:#999;font-weight:normal}
+.permalinkBody .permalink_stream .uiStreamPrivacy .img, .permalinkBody .permalink_stream .uiStreamSecondaryTime .img{margin-top:2px}
+.permalinkBody .permalink_stream .uiStreamMessage .actorDescription{padding:0}
+.permalinkBody .uiStreamSource{font-size:11px}
+.permalinkBody .permalink_stream .uiStreamHide{float:right}
+.permalinkBody .permalinkHeaderContent{margin-left:60px}
+.permalinkBody .permalinkHeaderContent .permalinkHeaderContentText{max-width:447px}
+.permalinkBody .permalinkHeaderInfo{max-width:370px}
+.permalinkBody .fbStreamPermalinkHeader .uiCloseButton{left:-9999px;overflow:hidden;position:relative;float:right;margin-bottom:5px}
+.permalinkBody .permalink_stream:hover .fbStreamPermalinkHeader .uiCloseButton{left:auto;overflow:visible;margin-bottom:5px}
+.permalinkBody #globalContainer #mainContainer .permalink_stream .noStoryBodyHeader{border-bottom:none}
+.permalinkBody #globalContainer #mainContainer .spamMessage{padding:15px 0 15px 15px;border-top:solid 1px #eee}
+._54hs{margin-right:1px;position:relative;top:-2px}
+._5llg{margin-right:0;top:2px}
+._54hs ._54hx{padding-right:2px}
+._8_{padding:13px 20px 7px}
+._90{color:#a6a6a6;padding-left:16px}
+._90 ._5wzu{margin-right:10px}
+._91{color:#bfbfbf;float:right;padding-left:10px}
+._8_ ._a9{padding-top:10px}
+._8_ + ._8_{padding-top:1px}
+.selectionEnabled ._8_{padding-left:40px}
+._1sk9{position:relative}
+._1ska{text-align:center}
+._1skb{margin-right:5px}
+._10n{padding-bottom:5px}
+._10o{padding-right:15px;white-space:nowrap}
+._10p{background-color:#f0f0f0;border:1px solid #e0e0e0;-webkit-border-radius:2px;display:inline-block;min-width:15px;padding:2px 5px;text-align:center}
+._10q{color:#e0e0e0;margin:0 5px}
+._5kfl{margin-left:30px}
+.uiStreamLargeHeadline .uiStreamStory .uiStreamHeadline{font-size:13px;line-height:1.38}
+.uiStreamLargeHeadline .uiStreamStory .ministoryMessage{font-size:11px;line-height:1.28}
+.uiStreamStory .uiStreamSubstory .photoRedesign{width:358px}
+.uiStreamStory .photoRedesign, .uiStreamStory .uiStreamSubstorySameActor .photoRedesign{width:398px}
+.uiStreamStory .uiStreamAttachments .photoRedesignAspect, .uiStreamStory .uiStreamAttachments .photoRedesignCover, .uiStreamStory .uiStreamAttachments .photoRedesignLink{border:0;display:block;float:left;position:relative}
+.uiStreamStory .photoRedesignSquare .photoWrap{height:320px;width:320px}
+.uiStreamStory .uiStreamSubstory .photoRedesignSquare .photoWrap{height:300px;width:300px}
+.uiStreamStory .photoRedesignMiddle .photoWrap{height:196px;width:196px}
+.uiStreamStory .uiStreamSubstory .photoRedesignMiddle .photoWrap{height:176px;width:176px}
+.uiStreamStory .photoRedesignSmallEdge .photoWrap{margin-right:-1px}
+.uiStreamStory .photoRedesignCover{display:block;height:147px;overflow:hidden;position:relative;width:398px}
+.uiStreamStory .uiStreamSubstory .photoRedesignCover{height:133px;width:358px}
+.uiStreamStory .uiStreamAttachments .photoRedesignAspect .img, .uiStreamStory .uiStreamAttachments .photoRedesignCover .img{display:block;margin:0;max-width:none}
+.uiStreamStory .photoRedesignCover .img{position:absolute}
+.uiStream .uiStreamStory .photoRedesignNoScale .photoWrap{background:none;text-align:left;width:auto}
+.uiStreamStory .photoRedesignAspect:after, .uiStreamStory .photoRedesignCover:after, .uiStreamStory .photoRedesignLink .uiScaledImageContainer:after{border:1px solid rgba(0, 0, 0, .1);bottom:0;content:'';left:0;position:absolute;right:0;top:0}
+.photoWrap .photoRedesignFacebox{border:2px solid rgba(255, 255, 255, .8);-webkit-border-radius:3px;position:absolute}
+.uiStreamStory .photoRedesignRightMargin{margin-right:5px}
+.uiStreamStory .photoRedesignBottomMargin{margin-bottom:5px}
+.uiStreamStory .photoRedesignTopMargin{margin-top:5px}
+.uiStreamStory .storyInnerContent .photoRedesignRightMargin{margin-right:2px}
+.uiStreamStory .storyInnerContent .photoRedesignBottomMargin{margin-bottom:2px}
+.uiStreamStory .storyInnerContent .photoRedesignTopMargin{margin-top:2px}
+.uiStreamStory .photoPermaRedesign{width:530px}
+.shareRedesign.largeMedia .shareRedesignContainer .shareMediaPhoto,
+.shareRedesign.largeMedia .shareRedesignContainer .shareMediaVideo{height:154px;width:154px}
+.shareRedesign.largeMedia .shareRedesignContainer .shareMediaVideo .img{max-height:154px;max-width:154px}
+.shareRedesign.largeMedia .shareRedesignContainer .attachmentText{max-height:134px}
+.shareRedesign.largeMedia .shareRedesignContainer .attachmentTextWithCTA{max-height:123px;overflow:hidden}
+.shareRedesign.largeMedia .shareRedesignContainer .shareText{max-height:154px;padding-bottom:7px}
+.shareRedesign.largeMedia .shareRedesignContainer .uiAttachmentDesc,
+.shareRedesign.fullWidthMedia .shareRedesignContainer .uiAttachmentDesc{margin-top:7px}
+.shareRedesign.fullWidthMedia .shareRedesignContainer .shareMediaPhoto{height:208px;width:100%}
+.shareRedesign.fullWidthMedia .shareRedesignContainer .shareMediaVideo .img{max-height:208px;max-width:100%}
+.shareRedesign.fullWidthMedia.substory .shareRedesignContainer .shareMediaPhoto{height:187px;width:100%}
+.shareRedesign.fullWidthMedia .shareRedesignContainer .attachmentText{max-height:76px}
+.shareRedesign.fullWidthMedia .shareRedesignContainer .shareText{max-height:106px;min-height:initial;padding-bottom:7px}
+.shareRedesign{position:relative;width:398px}
+.uiStreamSubstory .shareRedesign{width:358px}
+html .tickerDialogContent .shareRedesign{width:281px}
+.shareRedesign .exploded .shareText, .shareRedesignText:before, .shareRedesign .shareRedesignContainer:before{border-left:1px solid rgba(0, 0, 0, .08)}
+.shareRedesign .shareRedesignMedia:after, .shareRedesign .exploded .shareText, .shareRedesignRightBorder{border-right:1px solid rgba(0, 0, 0, .08)}
+.shareRedesignTopBorder, .shareRedesignBottomBorder{border-top:1px solid rgba(0, 0, 0, .08);left:1px;position:absolute;right:1px;top:0}
+.shareRedesignBottomBorder, .shareRedesignText:before, .shareRedesign .shareRedesignContainer:before, .shareRedesignRightBorder{bottom:0;position:absolute;right:0;top:0}
+.shareRedesignBottomBorder{top:auto}
+.shareRedesign .exploded + .shareRedesignTopBorder, .shareRedesign .exploded + .shareRedesignTopBorder + .shareRedesignRightBorder{display:none}
+.shareRedesignText:before, .shareRedesign .shareRedesignContainer:before{content:'';left:0;right:auto;z-index:1}
+.shareRedesign .shareRedesignContainer.exploded:before{display:none}
+.shareRedesign .exploded .iframeEmbed, .shareRedesign .exploded .swfObject{display:block;float:none;margin-bottom:0}
+.shareRedesign .shareMediaVideo{text-align:center}
+.shareRedesign .shareMediaLink, .shareRedesign .shareMediaVideo, .shareRedesign .shareMediaVideo .img, .shareRedesign .exploded iframe{display:block}
+.shareRedesign .exploded .shareRedesignVideo, .shareRedesign .exploded{border:0}
+.shareRedesign .exploded .shareText{margin-top:-1px;padding-top:10px}
+.shareRedesign .uiAttachmentTitle{color:#3b5998}
+.shareRedesign .uiAttachmentTitle:hover{text-decoration:underline}
+.shareRedesign .uiAttachmentDescTruncated{max-height:28px;overflow:hidden}
+.shareRedesign .shareRedesignMedia{margin-right:0;position:relative}
+.shareRedesign .shareRedesignMedia:after{bottom:1px;content:'';position:absolute;right:0;top:1px}
+.shareRedesign .exploded .shareRedesignMedia:after{display:none}
+.shareRedesign .shareMediaPhoto{background-position:50% 50%;background-repeat:no-repeat;display:block;height:90px;width:90px}
+.shareRedesign .shareText{cursor:pointer;display:block;padding-top:8px;text-decoration:none}
+.shareRedesign .shareText.shareTextContainsHTML{cursor:default}
+.shareRedesign .exploded .shareText{min-height:initial}
+.shareRedesignContainer .shareText{min-height:72px}
+.shareRedesignText, .shareRedesignContainer, .shareRedesign .shareMediaVideo{background-color:#f7f7f7}
+.shareRedesign .attachmentText{max-height:72px;overflow:hidden}
+.shareRedesign .attachmentText.smallHeightText{max-height:70px}
+.shareRedesign .uiAttachmentDesc{margin-top:3px}
+.shareRedesign .uiStreamActionFooter{margin-top:8px}
+.shareRedesign .callToActionLink{padding-left:24px}
+.shareRedesign .narrowCallToActionLink{float:right;margin:10px 0 10px 0;padding-left:24px}
+.uiStreamRedesign .uiStreamSubstories .uiStreamSubstory .uiUfi{width:358px}
+.uiStreamRedesign .uiStreamMessage .messageBody{color:#333;font-size:13px;line-height:1.38}
+.uiStreamRedesign .uiStreamStory .mainWrapper{margin-bottom:16px;padding-top:18px}
+.permalinkBody .uiStreamRedesign .uiStreamStory .mainWrapper{margin-bottom:4px}
+.uiStreamRedesign .uiStreamStory .actorPhoto{margin-bottom:16px;margin-top:18px}
+.uiStreamRedesign .uiStreamStory .uiStreamPassive{margin-bottom:6px}
+.uiStreamRedesign .uiStreamStory .actorDescription{margin-bottom:0;padding-bottom:4px}
+.uiStreamRedesign .shareSubtext{border-left:2px solid #ccc;margin-top:10px;padding-left:8px}
+.uiInfoTable{border:0;border-collapse:collapse;border-spacing:0;width:100%}
+.uiInfoTableFixed{table-layout:fixed}
+.uiInfoTable .spacer td{padding:5px 0}
+.noBorder .spacer td{padding:0;visibility:hidden}
+.uiInfoTable .label,
+.uiInfoTable .data,
+.uiInfoTable .rightCol{padding:3px 0 1px 0;text-align:left;vertical-align:top}
+.uiInfoTable .dataRow .data,
+.uiInfoTable .dataRow .rightCol{padding-top:5px}
+.uiInfoTable .data > input,
+.uiInfoTable .data > label input,
+.uiInfoTable .rightCol > input,
+.uiInfoTable .rightCol > label input{margin-left:0}
+.uiInfoTable .label{color:#666;font-weight:bold;padding-right:10px;text-align:right;width:130px}
+.uiInfoTable .dataRow .label{padding-top:8px}
+.uiInfoTable .label .annotation{color:#999}
+.uiInfoTable .rightCol{padding:0 0 0 20px;width:225px}
+.uiPhotoThumb{border:1px solid #ccc;display:inline-block}
+.uiPhotoThumb img{display:block;margin:3px}
+.uiPhotoThumb:hover{border:1px solid #3b5998}
+.loading.uiPhotoThumb{background:url(/rsrc.php/v2/yb/r/GsNJNwuI-UM.gif) no-repeat center center}
+.loading.uiPhotoThumb img{opacity:.3}
+._4h, ._4g{line-height:1.28em}
+._4g{left:-9999999px !important;position:absolute !important}
+
+#bootloader_Fxc0I { height: 42px; }
+.bootloader_Fxc0I { display:block !important; }

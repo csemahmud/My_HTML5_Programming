@@ -1,0 +1,114 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            div{
+                height: 100px;
+                width: 100px;
+                background-color: darkred;
+                position: absolute;
+                color: lightcyan;
+                left: 10px;
+                opacity: 1.0;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#animate").click(function(){
+                    var div = $("div");
+                    div.animate({
+                        height:'toggle'
+                    },"slow");
+                    div.animate({
+                        left:'250px',
+                        height:'+=150px',
+                        width:'+=150px'
+                    },"slow");
+                    div.animate({
+                        height:'toggle'
+                    },"slow");
+                    div.animate({
+                        width:"-=150px",
+                        opacity:'0.3'
+                    },"slow");
+                    div.animate({
+                        height:"-=150px",
+                        opacity:'0.7'
+                    },"slow");
+                    div.animate({
+                        width:"+=150px",
+                        opacity:'0.2'
+                    },"slow");
+                    div.animate({
+                        height:"+=150px",
+                        opacity:'0.8'
+                    },"slow");
+                    div.animate({
+                        fontSize:"+=3em"
+                    },"slow");
+                });
+                
+                $("#reverse").click(function(){
+                    var div = $("div");
+                    div.animate({
+                        fontSize:"-=3em"
+                    },"slow");
+                    div.animate({
+                        height:"-=150px",
+                        opacity:'0.8'
+                    },"slow");
+                    div.animate({
+                        width:"-=150px",
+                        opacity:'0.2'
+                    },"slow");
+                    div.animate({
+                        height:"+=150px",
+                        opacity:'0.7'
+                    },"slow");
+                    div.animate({
+                        width:"+=150px",
+                        opacity:'0.3'
+                    },"slow");
+                    div.animate({
+                        height:'toggle'
+                    },"slow");
+                    div.animate({
+                        left:'10px',
+                        height:'-=150px',
+                        width:'-=150px',
+                        opacity:'1.0'
+                    },"slow");
+                    div.animate({
+                        height:'toggle'
+                    },"slow");
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <input type="button" id="animate" value="Start   Animation">   .|.
+        <input type="button" id="reverse" value="Reverse   Animation">
+        <p>By  default  all  HTML  elements  have  a  static  position,  
+        and  can  not  be  moved  .  To  manipulate  the  position,  
+        remember  to  first  set  the  CSS  position  property  of  the  
+        element  to  relative,  fixed  or  absolute  !</p>
+        <div>
+            
+            Hello
+            
+        </div>
+    </body>
+</html>

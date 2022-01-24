@@ -1,0 +1,52 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            #div1{
+                border: 3px groove darkgoldenrod;
+                background-color: darkblue;
+                color: lightyellow;
+            }
+            #div2 p{
+                border: 4px dotted lightslategrey;
+                background-color: lightpink;
+                color: darkgreen;;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#div1").load("Documents/demo_test.txt",
+                    function(responseTxt1,statusTxt1,xhr1){
+                        if(statusTxt1=="success")
+                            alert("External   Contents   loaded   successfully   ");
+                        if(statusTxt1=="error")
+                            alert("Error : " + xhr1.status + " : " + xhr1.statusText)
+                    });
+                    $("#div2").load("Documents/demo_test.txt #p1");
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div id="div1"><h2>
+                Let   JQuery   and   AJAX   Change   The   Text   of   #div1
+            </h2></div>
+        <div id="div2">Let   JQuery   and   AJAX   Change   The   Text   of   #div2</div>
+        <br/>
+        <button>Get   External   Contents</button>
+    </body>
+</html>

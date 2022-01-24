@@ -1,0 +1,38 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  the  button  to  do  a  loop  which  will  skip  the  
+            step  where  i  =  3</p>
+            <button  onclick="skipFunction()">Click</button>
+            <p id="test_paragraph"></p>
+            
+            <script>
+                
+                function skipFunction(){
+                    
+                    var  x  =  "";
+                    for(var i = 0; i < 10; i++)
+                    {
+                        if(i==3)
+                            continue;
+                        
+                        x += "The  number  is  :  " + i + "<br>";
+                    }
+                    
+                    document.getElementById("test_paragraph").innerHTML = x;
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

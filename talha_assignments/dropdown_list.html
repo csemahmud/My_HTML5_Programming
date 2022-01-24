@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <script type="text/javascript">
+                
+                var country = new Array()
+                country = {
+                    "bd" : "Bangladesh",
+                    "us" : "United States",
+                    "ca" : "Canada",
+                    "sa" : "Saudia Arabia",
+                    "ma" : "Malaysia"
+                }
+                
+                function print_country_options(){
+                    for(key in country){
+                        document.write("<option value = " + key + ">" + country[key] + "</option>")
+                    }
+                }
+                
+            </script>
+            
+            <select>
+                
+                <option>Select   Country   ...</option>
+                <script type="text/javascript">
+                    
+                    print_country_options()
+                    
+                </script>
+                
+            </select>
+            
+        </div>
+    </body>
+</html>

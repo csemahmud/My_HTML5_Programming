@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <script>
+                
+                var string1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                document.write("<br><h3>" + string1 + "</h3><br>Length : " + string1.length);
+                document.write("<br>Index of 'EFGH' : " + string1.indexOf("EFGH"));
+                
+                var string2 = "Hello World!!!";
+                document.write("<br><h3>" + string2 + "</h3><br>Length : " + string2.length);
+                document.write("<br>Index of 'World' : " + string2.indexOf("World"));
+                document.write("<br>" + string2.match("world"));
+                document.write("<br>" + string2.match("World"));
+                document.write("<br>" + string2.match("World!"));
+                document.write("<br>Replacing World by Universe : ");
+                document.write(string2.replace("World","Universe"));
+                document.write("<br>" + string2.toUpperCase());
+                document.write("<br>" + string2.toLocaleLowerCase());
+                document.write("<br>" + string2);
+                
+            </script>
+            
+            <p>The methods return a new string, but The original string is not changed .</p>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        
+        <p id="hello">
+            
+            Hello   world  !!!
+            
+            <b>  Hello  Bangladesh </b>
+            
+        </p>
+        
+        <script>
+            
+            document.write(document.getElementById("hello").childNodes[0].nodeValue);
+            
+            text = document.getElementById("hello").firstChild.nodeValue;
+            document.write("<br>" + text);
+            
+            function view_document_body(){
+                alert(document.body.innerHTML);
+            }
+            
+        </script>
+        
+        <div>
+            
+            <p> Click the button to view the  <b>document.body</b>  property </p>
+            <input type="button" value="View <b> document.body </b>" onclick="view_document_body()">
+            
+        </div>
+    </body>
+</html>

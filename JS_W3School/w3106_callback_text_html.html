@@ -1,0 +1,45 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#btn_text").click(function(){
+                    $("#test_text").text(function(i, origText){
+                        return "Old   Text : "  +  origText  
+                                +  "   New   Text : Hello   World   !!!   ( index : "
+                                +  i   +" )";
+                    });
+                });
+                
+                $("#btn_html").click(function(){
+                    $("#test_html").html(function(i, origHtml){
+                        return "Old   HTML : "  +  origHtml  
+                                +  "   New   HTML : Hello   World   !!!   ( index : "
+                                +  i   +" )";
+                    });
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="test_text">This   is   <i><b>First</b>   paragraph</i></p>
+            <p id="test_html">This   is   <i><b>Second</b>   paragraph</i></p>
+            <input type="button" id="btn_text" value="Show   Old/New   Text">
+            <input type="button" id="btn_html" value="Show   Old/New   HTML">
+            
+        </div>
+    </body>
+</html>

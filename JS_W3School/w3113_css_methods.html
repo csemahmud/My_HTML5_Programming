@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#return_btn").click(function(){
+                    alert("Background  -  Color   =   " + $("p").css("background-color")
+                            + "\nFont  -   Color   =   " + $("p").css("color")
+                            + "\nFont  -  Size   =   " + $("p").css("font-size"));
+                });
+                $("#set_btn").click(function(){
+                    $("p").css({"background-color":"blue",
+                                "color":"yellow",
+                                "font-size":"200%"});
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <h2>This   is   a   heading</h2>
+            <p style="background-color: red;color: cyan;">This   is   a   paragraph</p>
+            <p style="background-color: black;color: white;">This   is   a   paragraph</p>
+            <p style="background-color: green;color: magenta;">This   is   a   paragraph</p>
+            <p>This   is   a   paragraph</p>
+            
+            <button id="return_btn">return   styles   of   p</button>|
+            <button id="set_btn">set   multiple   styles   for   p</button>
+            
+        </div>
+    </body>
+</html>

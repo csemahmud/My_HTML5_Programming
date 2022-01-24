@@ -1,0 +1,62 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            
+            div{
+                float: left;
+                background-color: darkred;
+                color: lightcyan;
+                width: 120px;
+                height: 40px;
+                padding: 40px;
+                margin: 10px;
+            }
+            
+        </style>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            
+            Mouse  over  me  
+            
+        </div>
+        
+        <div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)">
+            
+            Click  Me
+            
+        </div>
+        
+        <script>
+            
+            function mouseOver(obj){
+                obj.innerHTML = "<big><b><i>THANK   YOU !!!</i></b></big>";
+            }
+            
+            function mouseOut(obj){
+                obj.innerHTML = "Mouse  over  me  ";
+            }
+            
+            function mouseDown(obj){
+                obj.style.backgroundColor = "blue";
+                obj.style.color = "yellow";
+                obj.innerHTML = "<big><b><i>RELEASE   ME   !!!</i></b></big>";
+            }
+            
+            function mouseUp(obj){
+                obj.style.backgroundColor = "darkred";
+                obj.style.color = "lightcyan";
+                obj.innerHTML = "<big><b><i>THANK   YOU   !!!</i></b></big>";
+            }
+            
+        </script>
+    </body>
+</html>

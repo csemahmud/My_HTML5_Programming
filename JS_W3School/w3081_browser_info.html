@@ -1,0 +1,33 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div id="browser_info">TODO write content</div>
+        <script>
+            
+            text = "<p>  Browser  Code - Name : " + navigator.appCodeName + "</p>"
+                 + "<p> Browser Name : " + navigator.appName + "</p>"
+                 + "<p> Browser Version : " + navigator.appVersion + "</p>"
+                 + "<p> Cookies Enabled : " + navigator.cookieEnabled + "</p>"
+                 + "<p> Browser Language : " + navigator.language + "</p>"
+                 + "<p> Browser Online : " + navigator.onLine + "</p>"
+                 + "<p> Platform : " + navigator.platform + "</p>"
+                 + "<p> User - agent header : " + navigator.userAgent + "</p>"
+                 + "<p> User agent language : " + navigator.systemLanguage + "</p>";
+                 
+             if(window.chrome)
+                text += "<p>Actually  this  Browser is Google Chrome</p>";
+             
+             document.getElementById("browser_info").innerHTML = text;
+                 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3school   -->
+    <body>
+        <div>
+            <h1>My  web  Page</h1>
+            <p id="test_paragraph">A Paragraph</p>
+            <div id="test_div"> 
+                A Div
+                
+                <p id="inner_paragraph"> Inner  Paragraph  </p>
+                
+            </div>
+        </div>
+        
+        <script>
+            
+            /*
+                The code below  will  write  
+                to  a  paragraph  and  a  div
+                and  last  test  will  not
+                appear   .
+            */
+            
+            // write to  a  paragraph
+            document.getElementById("test_paragraph").innerHTML = "Hello  dolly  !!!";
+            
+            // write to a div
+            document.getElementById("test_div").innerHTML = "How  are  you  ?";
+            
+            // this text will not appear
+            document.getElementById("inner_paragraph").innerHTML = "I  love  you  !!!";
+        </script>
+    </body>
+</html>

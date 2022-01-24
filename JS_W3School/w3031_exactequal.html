@@ -1,0 +1,34 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Return  the  value  of  exact  comparison</p>
+            <button  onclick="clickFunction()">Click</button>
+            <p id="test_paragraph1"></p>
+            <p id="test_paragraph2"></p>
+            <p id="test_paragraph3"></p>
+            <p id="test_paragraph4"></p>
+            
+            <script>
+                
+                function clickFunction(){
+                    var x = 5;
+                    document.getElementById("test_paragraph1").innerHTML = x==="5";
+                    document.getElementById("test_paragraph2").innerHTML = x===5;
+                    document.getElementById("test_paragraph3").innerHTML = x==5;
+                    document.getElementById("test_paragraph4").innerHTML = x=="5";
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

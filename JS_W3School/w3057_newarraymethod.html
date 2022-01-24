@@ -1,0 +1,40 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p id="test_paragraph">Click the button to create an array, call the new mhkUpCase()
+            method, and display the result</p>
+            
+            <input type="button" value="click" onclick="myFunction()">
+            
+            <script>
+                
+                Array.prototype.mhkUpCase = function(){
+                    
+                    for(i = 0;i<this.length;i++)
+                        this[i] = this[i].toUpperCase();
+                    
+                }
+                
+                function myFunction(){
+                    
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    fruits.mhkUpCase();
+                    document.getElementById("test_paragraph").innerHTML = fruits;
+                    
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

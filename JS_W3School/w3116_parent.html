@@ -1,0 +1,84 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            .ancestors{
+                display: block;
+                border: 2px dotted gray;
+                color: gray;
+                padding: 5px;
+                margin: 15px;
+            }
+            
+            #direct_parent b{
+                color: red;
+            }
+            #all_parents b{
+                color: darkgoldenrod;
+            }
+            #ul_parents b{
+                color: green;
+            }
+            #parents_until_div b{
+                color: blue;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#direct_parent").click(function(){
+                    $("span").parent().css({"color":"red",
+                                            "border":"3px solid red",
+                                            "font-weight":"bolder"});
+                });
+                $("#all_parents").click(function(){
+                    $("span").parents().css({"color":"darkgoldenrod",
+                                            "border":"3px solid darkgoldenrod",
+                                            "font-weight":"bolder"});
+                });
+                $("#ul_parents").click(function(){
+                    $("span").parents("ul").css({"color":"green",
+                                            "border":"3px solid green",
+                                            "font-weight":"bolder"});
+                });
+                $("#parents_until_div").click(function(){
+                    $("span").parentsUntil("div").css({"color":"blue",
+                                            "border":"3px solid blue",
+                                            "font-weight":"bolder"});
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body class="ancestors">   body   (   great  -  great - grandparent   )
+        <div class="ancestors">   div   (   great - grandparent   )
+            
+            <ul class="ancestors">   ul   (   grandparent   )
+                
+                <li class="ancestors">   li   (   direct - Parent   )
+                    
+                    <span class="ancestors">span   (   Current   Element   )
+                    </span>
+                    
+                </li>
+                
+            </ul>
+            
+        </div>
+        <button id="direct_parent" >Mark   direct - Parent   <b>red</b></button> |
+        <button id="all_parents">Mark   All Parents   <b>dark-goldenrod</b></button> |
+        <button id="ul_parents">Mark   &lt;ul&gt; Parents   <b>green</b></button> |
+        <button id="parents_until_div">Mark   Parents   until   &lt;div&gt;   <b>blue</b></button>
+    </body>
+</html>

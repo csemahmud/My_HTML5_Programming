@@ -1,0 +1,403 @@
+/* 
+    Document   : style_table
+    Created on : Dec 8, 2013, 8:54:48 AM
+    Author     : User
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+/*   MAHMMUDUL   HASAN   KHAN   Talha   Training  */
+
+body{
+    background-color: #000000;
+    color: white;
+    margin: 5px 10%;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+#wrapper{
+    height: 1974px;
+    width: 100%;
+    background-color:#666666
+}
+
+#wrapper header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 100%;
+    height: 210px;
+    background-color:#9999ff;
+    z-index: 5;
+}
+
+header #logo{
+    float: left;
+    height: 100%;
+    width: 24.7%;
+    background-color: #cc3300;
+    margin-right: .3%;
+}
+
+#logo #logo_img{
+    float: left;
+    height: 210px;
+    width: 171px;
+    margin: 0% 10%;
+    background: url(../images/layout_logo.JPG) center no-repeat;
+}
+
+header #main_banner{
+    float: left;
+    height: 100%;
+    width: 75%;
+    background-color: #336600;
+}
+
+#mid_img{
+    float: right;
+    width: 98%;
+    margin: 215px 0% .5%;
+    box-shadow: -10px 10px 10px #000000;
+    border-style: groove inset;
+    border-color: silver gold darkgoldenrod;
+    border-width: 5px 8px 11px;
+    border-radius: 0%;
+    position: relative;
+    z-index: 1;
+     -webkit-transform: scale(1) rotate(0deg);
+     -moz-transform: scale(1) rotate(0deg);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#mid_img:hover{
+    box-shadow: -10px 10px 15px #000000;
+    position: relative;
+    border-radius: 100%;
+    z-index: 10;
+     -webkit-transform: scale(1.5) rotate(-3600deg);
+     -moz-transform: scale(1.5) rotate(-3600deg);
+}
+
+#main_banner #top_banner{
+    float: left;
+    height: 67%;
+    width: 100%;
+    background-color: #660066;
+}
+
+#main_banner nav{
+    float: left;
+    width: 100%;
+    height: 29.5%;
+    background-color: #ffff00;
+    margin-top: .5%;
+    color: #330033;
+}
+
+#wrapper section{
+    float: left;
+    width: 100%;
+    height: 1020px;
+    background-color:#000033;
+    margin-top: 5px;
+    color: #000000;
+}
+
+section #left{
+    float: left;
+    height: 100%;
+    width: 22%;
+    background-color: #9999ff;
+    margin-right: .3%
+}
+
+#left #top_left{
+    float: left;
+    height: 42%;
+    width: 80%;
+    background-color: #ffff99;
+    margin: 10%;
+}
+
+#left #bottom_left{
+    float: left;
+    height: 42%;
+    width: 80%;
+    background-color: #ffff99;
+    margin: 10%;
+}
+
+section #middle{
+    float: left;
+    height: 100%;
+    width: 55.4%;
+    background-color: #ff9966;
+    margin-right: .3%;
+}
+
+#middle #mid_left{
+    float: left;
+     height: 31%;
+     width: 47%;
+     background-color: #ffffff;
+     margin: 1.5%;
+}
+
+#middle #mid_right{
+    float: left;
+     height: 31%;
+     width: 47%;
+     background-color: #ffffff;
+     margin: 1.5%;
+}
+
+#middle #mid_bottom{
+    float: left;
+    height: 63%;
+    width: 97%;
+    margin: 1.5%;
+    background-color: #ffffff
+}
+
+section #right{
+    float: left;
+    height: 100%;
+    width: 22%;
+    background-color: #9999ff;
+}
+
+#right #top_right{
+    float: left;
+    height: 63%;
+    width: 80%;
+    background-color: #ffff99;
+    margin: 10%;
+}
+
+#top_right b{
+    float: left;
+}
+
+#top_right #right_menu{
+    float: left;
+    background-color: #33ff99;
+    border-style: inset;
+    box-shadow: -10px 10px 10px #000000 inset;
+    color: #ffff66;
+    border-color: #ffcc33;
+    border-width: thick;
+    width: 95%;
+    text-align: center;
+}
+
+#right_menu h3{
+    width: 90%;
+    background-color: #666666;
+    margin: 20px 5%;
+    text-align: center;
+    height: 25px;
+    padding: 15px 0px;
+    color: #cc0000;
+    border-radius: 50px 100px;
+    box-shadow: -10px 10px 10px black;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, #666666),
+        color-stop(0.51, #ffffff),
+        color-stop(0.87, #666666)
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        #666666 2%,
+        #ffffff 51%,
+        #666666 87%
+        );
+}
+
+#right_menu ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#right_menu ul li{
+    margin: 10px 10px;
+    margin-left: 10px;
+    border-color: #ffff99;
+    border-bottom-style: dotted;
+    background-color: #000033;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+#right_menu ul li:hover{
+    border-color: #ffcccc;
+    background-color: #003333;
+    margin-left: 40px;
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+}
+
+#right_menu ul li a{
+    font-size: 12px;
+    color: #ffff99;
+    font-weight: normal;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+#right_menu ul li a:hover{
+    font-weight: bolder;
+    color: #ffcccc;
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);;
+}
+
+#right #bottom_right{
+    float: left;
+    height: 21%;
+    width: 80%;
+    background-color: #ffff99;
+    margin: 10%;
+}
+
+#wrapper #bottom{
+    float: left;
+    background-color: #cccccc;
+    height: 250px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#bottom #bottom1{
+    float: left;
+    background-color: darkblue;
+    height: 100%;
+    width: 33%;
+    margin-right: .5%;
+    color: lightyellow;
+}
+
+#bottom #bottom2{
+    float: left;
+    background-color: green;
+    height: 100%;
+    width: 33%;
+    margin-right: .5%;
+    color: magenta;
+}
+
+#bottom #bottom3{
+    float: left;
+    background-color: lightpink;
+    height: 100%;
+    width: 33%;
+    color: darkcyan;
+}
+
+#wrapper footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: #663300;
+    margin-top: 5px;
+    z-index: 5;
+}
+
+.button{
+    float: left;
+    width: 100px;
+    height: 25px;
+    background-color: #000066;
+    background: -moz-linear-gradient(to top,#0000cc,#9999ff,#000066);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#9999ff), color-stop(20%,#0000cc), color-stop(50%,#000066));
+    box-shadow: -10px 10px 10px #000000;
+    color: #ffcc00;
+    margin: 5px 13px;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px 50px 10px 50px;
+    border-style: groove;
+    border-width: 0px 0px 10px 10px;
+    border-color: #ccccff;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.button:first-letter{
+    font-size: 22px;
+    color: #ff9966;
+}
+
+.button:hover{
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc00cc;
+    background-color: #009999;
+    background: -moz-linear-gradient(to top,#006600,#99ff99,#009999);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#99ff99), color-stop(20%,#006600), color-stop(50%,#009999));
+    box-shadow: -10px 10px 15px #000000;
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+}
+
+.input_button{
+    float: left;
+    width: 100px;
+    height: 35px;
+    background-color: #000066;
+    background: -moz-linear-gradient(to top,#0000cc,#9999ff,#000066);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#9999ff), color-stop(20%,#0000cc), color-stop(50%,#000066));
+    box-shadow: -10px 10px 10px #000000;
+    color: #ffcc00;
+    margin: 5px 13px;
+    text-align: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 10px 50px 10px 50px;
+    border-style: groove;
+    border-width: 0px 0px 10px 10px;
+    border-color: #66ccff;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.input_button:first-letter{
+    font-size: 22px;
+    color: #ff9966;
+}
+
+.input_button:hover{
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc00cc;
+    background-color: #009999;
+    background: -moz-linear-gradient(to top,#006600,#99ff99,#009999);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#99ff99), color-stop(20%,#006600), color-stop(50%,#009999));
+    box-shadow: -10px 10px 15px #000000;
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+}

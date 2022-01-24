@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p> Click  the first button  alert  "Hello,  Boss  !!!"  after  waiting  3  seconds</p>
+            <p>Click  the  second  button  to  prevent  the  first  function  to  execute
+            (  you  must  click  it  before  the  3  seconds  are  up  .)</p>
+            
+            <input type="button" onclick="displayAlert()" value="Click">
+            <input type="button" onclick="stopAlert()" value="Stop  the  alert">
+            
+            <script>
+                
+                var timeVar;
+                
+                function displayAlert(){
+                    timeVar = setTimeout(function(){ alert("Hello,  Boss  !!!\n Now the time is : "
+                    + new Date().toLocaleTimeString()) },3000)
+                }
+                
+                function stopAlert(){
+                    clearInterval(timeVar);
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

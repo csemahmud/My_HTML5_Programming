@@ -1,0 +1,58 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style type="text/css">
+            
+            .italic{
+                font-style: italic;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#remove_btn").click(function(){
+                    $("#div1").remove();
+                });
+                $("#empty_btn").click(function(){
+                    $("#div1").empty();
+                });
+                $("#italic_remove_btn").click(function(){
+                    $("p").remove(".italic");
+                    $("br").remove(".italic");
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div id="div1" 
+             style="height: 300px;width: 300px;border: 5px groove goldenrod;color: lightyellow;background-color: darkblue">
+            
+            <h3 class="italic">This   is   a  heading   in   div</h3>
+            <input type="text" name="test_text" value="Test   TextBox">
+            <br class="italic"/>
+            This   is   some   text   in   a    div
+            <p>This   is   a  paragraph  in   div</p>
+            <p class="italic">This   is   a    paragraph   of   italic   class   in   div</p>
+            <p class="italic">This   is   a    paragraph   of   italic   class   in   div</p>
+            
+        </div>
+        <br/><br/>
+        <button id="remove_btn">Remove   all   div   elements</button> 
+        <b><i><big>|</big></i></b>
+        <button id="empty_btn">Empty   all   div   elements</button>
+        <b><i><big>|</big></i></b>
+        <button id="italic_remove_btn">
+            Remove   all   br   and   p   elements   with   class="italic"</button>
+    </body>
+</html>

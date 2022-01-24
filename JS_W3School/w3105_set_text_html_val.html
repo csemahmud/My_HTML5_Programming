@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            test_str = "<b>Hello   <i>World</i>   !!!</b>";
+            $(document).ready(function(){
+                $("#btn_text").click(function(){
+                    $("#test_text").text(test_str);
+                });
+            });
+            $(document).ready(function(){
+                $("#btn_html").click(function(){
+                    $("#test_html").html(test_str);
+                });
+            });
+            $(document).ready(function(){
+                $("#btn_val").click(function(){
+                    $("#test_val").val(test_str);
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="test_text">This   is   a  paragraph</p>
+            <p id="test_html">This   is   another  paragraph</p>
+            <p>Input   field  :  <input type="text" id="test_val" value="Mahmudul   Hasan   Khan"></p>
+            <input type="button" id="btn_text" value="Set   Text">
+            <input type="button" id="btn_html" value="Set   HTML">
+            <input type="button" id="btn_val" value="Set   Value">
+            
+        </div>
+    </body>
+</html>

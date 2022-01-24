@@ -1,0 +1,65 @@
+/*!CK:2238328050!*//*1390287664,178186551*/
+
+._5084{border:1px solid #bbb;height:127px;position:relative;top:1px;width:398px}
+._5uoe{width:358px}
+._5084._5r-i{height:189px}
+._507_{background-color:#fff;border:3px solid #fff;-webkit-border-radius:2px;display:block;height:99px;width:99px}
+._5080{background:rgba(0, 0, 0, .3);-webkit-border-radius:3px;bottom:13px;left:13px;margin:13px 7px -3px -3px;padding:1px;position:absolute}
+._5083{overflow:hidden}
+._509z ._5uek{background:url(/rsrc.php/v2/yG/r/8RHv8nDQAHL.png) repeat-x left top;height:85px}
+._509z ._5uek._5r-j{background:url(/rsrc.php/v2/yG/r/8RHv8nDQAHL.png) left top;background-size:100% 100%;height:147px}
+._51hs ._5uek{background-color:#f5f7f7;height:85px}
+._5uek{bottom:42px;position:absolute;width:398px}
+._5uoe ._5uek{width:358px}
+._5uel{max-height:30px;overflow-y:hidden;position:relative}
+._5uem{bottom:48px;left:128px;line-height:1.2;max-width:250px;position:absolute;z-index:1}
+._509z ._5uem, ._509z ._5uem a{color:#fff}
+._51hs ._5uem{color:gray}
+._5uen{height:34px;margin-left:128px;margin-right:10px;overflow:hidden}
+._51hs ._5uen{margin-top:88px}
+._509z ._5uen{margin-top:2px}
+._5uen ._508a{margin-top:6px}
+._5uen ._5ueo{height:30px;overflow:hidden}
+._5uen ._5081{float:right;margin-top:8px;position:static}
+._5n72 ._1dsl{display:none}
+._5s6l{display:table-cell;padding:8px 0 10px 5px;width:10000px}
+._5n72 ._5142, ._5n72 ._55d0{position:relative}
+._5n72 ._mi{position:absolute;right:40px;top:8px;z-index:1}
+._5n72.child_was_focused ._mi{right:10px}
+._5n72 ._2yg .composerTypeahead .wrap{padding:11px 10px}
+._6nw ._5n72 ._2yg .composerTypeahead .wrap{padding:11px 5px}
+._5n72 ._2yg .uiMentionsInput .highlighter{padding-left:10px;padding-top:12px}
+._6nw ._5n72 ._2yg .uiMentionsInput .highlighter{padding-left:12px;padding-top:18px}
+._5o6g{position:absolute;right:0;top:0}
+._6nw ._5o6g{right:2px;top:8px}
+._5o6h{cursor:pointer;outline:0}
+._5olm{color:#141823;padding:0 12px;text-decoration:none}
+.child_was_focused ._5o6g{display:none}
+._50zb{border-bottom:1px solid #e6e6e6;border-top:1px solid #ccc;margin-left:-18px;padding-left:18px}
+html ._50zc{margin-bottom:10px;margin-top:5px}
+.friendListHeader{height:41px;padding-top:4px}
+.friendListHeader .editForm, .friendListHeaderEditMode .staticName, .friendListHeaderEditMode .friendListSubHeader, .friendListManage .updateType, .updateTypesExpanded .chooseUpdateTypes{display:none}
+.friendListHeaderEditMode .editForm, .updateTypesExpanded .updateType{display:block}
+.friendListHeader .friendListName .nameInput{font-size:13px;width:140px}
+.friendListSubHeader{padding-left:23px}
+.friendListHeader .timelineUnitContainer .uiSelector{padding-left:5px;margin-left:-12px;margin-top:-3px}
+.friendListHeader .fbAudienceHover{margin-left:-1px}
+div#contentCol.friendListFilter{padding-top:15px !important}
+div#contentCol.friendListFilter div#rightCol{padding-top:0}
+.friendListFilterNullState{padding-top:40px;text-align:center}
+.friendListRestrictedNullState{border-top:1px solid #ccc;font-size:12px;padding-top:40px;text-align:justify}
+.notificationSelector .uiSelectorButton .img{margin-top:2px;margin-left:2px}
+.friendListTypeaheadBox .plusIcon{position:absolute;top:7px;left:11px}
+.friendListTypeaheadBox .friendListAddTypeahead{background-color:transparent}
+.friendListAddTypeahead .textInput{padding-left:15px}
+.friendListAddTypeahead .noPadding{padding-left:0}
+.friendListAddTypeahead{margin-right:8px}
+.friendListTypeaheadBox{position:relative}
+.home #rightCol .friend_list_new_feed_header{height:34px;margin-bottom:5px;padding-top:5px;padding-right:20px}
+.smartListTip{cursor:default;font-weight:normal}
+.empty .fbFriendListMemberBoxFacepile,
+.fbFriendListNoMembersMessage{display:none}
+.empty .fbFriendListNoMembersMessage{display:block}
+
+#bootloader_be50I { height: 42px; }
+.bootloader_be50I { display:block !important; }

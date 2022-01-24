@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <script>
+                var  txt = "";
+                
+                function message()
+                {
+                    try
+                    {
+                    addddlert("Welcome   Guest   !!!");
+                    }
+                
+                    catch(err)
+                    {
+                        txt = "There  was  an  error  on  this  page  \n\n";
+                        txt += "Error  Description  :  "  +  err.message + "\n\n";
+                        txt += "Click  OK  to  continue : ";
+                        alert(txt);
+                    }
+                }
+            </script>
+            
+            <input type="button" value="View Message" onclick="message()">
+        </div>
+    </body>
+</html>

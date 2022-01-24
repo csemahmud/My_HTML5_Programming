@@ -1,0 +1,111 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#show").hide();
+                $("#toggle").hide();
+                
+                $("#p1").mouseenter(function(){
+                    alert("You   have   entered   First   paragraph   :   p1   !!!");
+                });
+                
+                $("#p1").mouseleave(function(){
+                    alert("Bye   !   You   now  leave   First   paragraph   :   p1   !!!");
+                    $(this).hide();
+                    $("#show").show();
+                    $("#toggle").show();
+                });
+                
+                $("#p2").mouseleave(function(){
+                    alert("Bye   !   You   now  leave   Second   paragraph   :   p2   !!!");
+                    $(this).hide();
+                    $("#show").show();
+                    $("#toggle").show();
+                });
+                
+                $("#p2").mousedown(function(){
+                    alert("Mouse   down   over   Second   paragraph   :   p2   !!!");
+                });
+                
+                $("#p3").mouseup(function(){
+                    alert("Mouse   up   over   Third   paragraph   :   p3   !!!");
+                    
+                    $("#p3").mouseleave(function(){
+                        alert("Thanks  and   Bye   !   You   now  leave   Third   paragraph   :   p3   !!!");
+                        $(this).hide(1500);
+                        $("#show").show();
+                        $("#toggle").show();
+                    });
+                });
+                
+                $("#p4").hover(function(){
+                    alert("You   have   entered   Fourth   paragraph   :   p4   !!!");
+                },
+                function(){
+                    alert("Bye   !   You   now  leave   Fourth   paragraph   :   p4   !!!");
+                    $(this).hide();
+                    $("#show").show();
+                    $("#toggle").show();
+                });
+                
+                $("#toggle").dblclick(function(){
+                    $("p").toggle(2000);
+                });
+                $("#show").click(function(){
+                    $("p").show(2500);
+                    $(this).hide();
+                    $("#toggle").hide();
+                });
+            });
+            
+        </script>
+        <style>
+            
+            p{
+                float: left;
+                background-color: darkolivegreen;
+                color: lightpink;
+                width: 350px;
+                margin: 10px;
+                height: 180px;
+                font-family: cursive;
+                font-weight: bolder;
+                font-style: italic;
+                font-size: xx-large;
+                font-stretch: ultra-expanded;
+                padding: 5px;
+                border-color: goldenrod;
+                border-style: groove;
+                border-spacing: calc;
+                border-width: thick;
+                border-radius: 20px;
+                text-align: justify;
+                text-justify: auto;
+            }
+            
+        </style>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="p1">Enter   First   paragraph   :   p1   .</p>
+            <p id="p2">Down   your  mouse   over   Second   paragraph   :   p2   .</p>
+            <p id="p3">Click   then,   Up   your  mouse   over   Third   paragraph   :   p3   .</p>
+            <p id="p4">Click   or   Hover   your  mouse   over   Fourth   paragraph   :   p4   .</p>
+            <input type="button" id="show" value="Show   All">
+            <input type="button" id="toggle" value="Toggle">
+            
+        </div>
+    </body>
+</html>

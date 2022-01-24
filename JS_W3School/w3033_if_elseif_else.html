@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  button  to  get  a  time  based  greetings</p>
+            <button  onclick="conditionalFnc()">Click</button>
+            <p id="greetings_paragraph"></p>
+            
+            
+            <script>
+                
+                function  conditionalFnc(){
+                    
+                    var x = "";
+                    var time = new Date().getHours();
+                    if(time<5)
+                        {
+                            x = "Good   Night";
+                        }
+                        
+                        else if(time<10)
+                            {
+                                x = "Good   Morning";
+                            }
+                            
+                            else if(time<19)
+                            {
+                                 x = "Good   After - Noon";
+                            }
+                            
+                            else
+                            {
+                                x = "Good   Evening";
+                            }
+                            
+                     document.getElementById("greetings_paragraph").innerHTML = x;
+                    
+                }
+                
+                
+            </script>
+        </div>
+    </body>
+</html>

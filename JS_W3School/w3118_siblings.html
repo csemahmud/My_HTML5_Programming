@@ -1,0 +1,96 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <style>
+            
+            .siblings{
+                display: block;
+                border: 2px dotted gray;
+                color: gray;
+                padding: 5px;
+                margin: 15px;
+            }
+            
+            #all_siblings_btn b{
+                color: magenta;
+            }
+            
+            #p_siblings_btn b{
+                color: darkred;
+            }
+            
+            #next_btn b{
+                color: green;
+            }
+            
+            #next_all_btn b{
+                color: darkgoldenrod;
+            }
+            
+            #next_until_btn b{
+                color: blue;
+            }
+            
+        </style>
+        <script>
+            
+            $(document).ready(function(){
+                $("#all_siblings_btn").click(function(){
+                    $("h2").siblings().css({"color":"magenta",
+                                            "border":"3px solid magenta",
+                                            "font-weight":"bolder"});
+                });
+                $("#p_siblings_btn").click(function(){
+                    $("h2").siblings("p").css({"color":"darkred",
+                                            "border":"4px solid darkred",
+                                            "font-weight":"bolder"});
+                });
+                $("#next_btn").click(function(){
+                    $("h2").next().css({"color":"green",
+                                            "border":"3px solid green",
+                                            "font-weight":"bolder"});
+                });
+                $("#next_all_btn").click(function(){
+                    $("h2").nextAll().css({"color":"darkgoldenrod",
+                                            "border":"3px solid darkgoldenrod",
+                                            "font-weight":"bolder"});
+                });
+                $("#next_until_btn").click(function(){
+                    $("h2").nextUntil("h6").css({"color":"blue",
+                                            "border":"3px solid blue",
+                                            "font-weight":"bolder"});
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body class="siblings">   body   (   grand - parent   )
+        <div class="siblings"> div   (   parent   )
+            <p class="siblings">p</p>
+            <span class="siblings">span</span>
+            <h2 class="siblings">h2   (   Current   Element   )</h2>
+            <h3 class="siblings">h3</h3>
+            <h4 class="siblings">h4</h4>
+            <h5 class="siblings">h5</h5>
+            <h6 class="siblings">h6</h6>
+            <p class="siblings">p</p>
+        </div>
+        
+        <button id="all_siblings_btn">Mark   all   Siblings   of   &lt;h2&gt; <b>magenta</b></button>   |   
+        <button id="p_siblings_btn">Mark   &lt;p&gt;   Siblings   of   &lt;h2&gt; <b>dark-red</b></button>   |   
+        <button id="next_btn">Mark   next   Sibling   of   &lt;h2&gt; <b>green</b></button>   |   
+        <button id="next_all_btn">Mark   All   next   Siblings   of   &lt;h2&gt; <b>dark-goldenrod</b></button>   |   
+        <button id="next_until_btn">Mark   next   Siblings   of   &lt;h2&gt;   
+            Until   &lt;h6&gt;   <b>blue</b></button>
+        
+    </body>
+</html>

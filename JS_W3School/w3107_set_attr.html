@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="JS/jquery-2.1.0.js"></script>
+        <script>
+            
+            flag = true;
+            
+            $(document).ready(function(){
+                $("#change_text").click(function(){
+                    if(flag)
+                        {
+                            $("#test_text").attr({
+                                "type" : "submit",
+                                "value" : "Test   Button",
+                                "id" : "test_button"
+                            });
+                            flag = false;
+                        }
+                        
+                        else
+                            {
+                                $("#test_button").attr({
+                                    "type" : "text",
+                                    "value" : "Test   Text",
+                                    "id" : "test_text"
+                                });
+                                flag = true;
+                            }
+                });
+            });
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <br>
+            <input type="text" id="test_text" value="Test   Text">
+            <br>
+            <br>
+            <input type="button" id="change_text" value="Change   Type">
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            
+            var data = new Array();
+            data = {
+                'name':'Mahmudul   Hasan   Khan',
+                'age':'27'
+            }
+            
+            data[0] = 3;
+            data[1] = 5;
+            data[2] = 13;
+            data['bn'] = 'Bangladesh';
+            data['us'] = 'USA';
+            data['cn'] = 'Canada';
+            
+            document.write('<ul>')
+            for(key in data){
+                document.write('<li>'+'key : '+key+', data : '+data[key]+'</li>')
+            }
+            document.write('</ul>');
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

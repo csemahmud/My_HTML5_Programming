@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p id="test_paragraph">Click the button to display the array values after split</p>
+            <input type="button" value="Click" onclick="strToArray()">
+            
+            <script>
+                
+                function strToArray(){
+                    
+                    var str = "1.25,2.5,3.75,4.0,asd";
+                    var anArray = str.split(",");
+                    txt = "";
+                    for(x in anArray)
+                        txt += "<p>" + anArray[x] + "/2 = " + (anArray[x]/2) + "</p>";
+                    
+                    document.getElementById("test_paragraph").innerHTML = txt;
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>

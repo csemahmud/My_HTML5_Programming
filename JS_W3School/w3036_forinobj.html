@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            <p>Click  the  button  to  loop  through  the  properties  of  an  object  named  "person"</p>
+            <button  onclick="forFunction()">Click</button>
+            <p id="for_paragraph"></p>
+            
+            <script>
+                
+                function forFunction(){
+                    var txt = "person = {<ul>";
+                    var person = {firstName:"John",lastName:"Doe",email:"john.doe@gmail.com",age:25};
+                    
+                    for (property in person) {
+                            txt +="<li><strong>" + property + ':</strong><i>"' + person[property] + "</i>";
+                            if(property != "age") {
+                                txt += '",</li>';
+                            } else {
+                                txt += '"</li>';
+                            }
+                        }
+                    txt += "</ul>}";
+                    document.getElementById("for_paragraph").innerHTML = txt;
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>
